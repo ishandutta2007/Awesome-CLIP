@@ -10,7 +10,10 @@ Contrastive Language-Image Pre-training (CLIP) is a foundational multimodal deep
 The technical progression of contrastive multimodal scaling has transitioned from basic dual-tower coordinate alignments to optimized sigmoid loss variants, moving toward modern autoencoding and generative foundation hybrids.
 
 ```mermaid
-[Dual-Tower CLIP (Radford et al., 2021)] ----> [Sigmoid Loss Scaling (SigLIP, 2023)] ----> [Unified Generative Hybrids (Chameleon/GPT-4o, 2024+)](Global Matrix InfoNCE Bottlenecks)             (Pairwise Binary Logistic Optimization)           (Unified Interleaved Token Backbones)
+flowchart LR
+    A["Dual-Tower CLIP (Radford et al., 2021)<br/>(Global Matrix InfoNCE Bottlenecks)"]
+    --> B["Sigmoid Loss Scaling (SigLIP, 2023)<br/>(Pairwise Binary Logistic Optimization)"]
+    --> C["Unified Generative Hybrids (Chameleon/GPT-4o, 2024+)<br/>(Unified Interleaved Token Backbones)"]
 ```
 
 *   **The Baseline Dual-Tower Era (OpenAI CLIP, 2021)**
