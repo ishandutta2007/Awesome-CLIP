@@ -81,3 +81,15 @@ Deploying and scaling CLIP-style contrastive pipelines across industrial infrast
 | [**Text-to-Image Generative Guidance Models (Diffusion Frontends)**](./details/generative_guidance_diffusion.md) | Acts as the mandatory semantic text-alignment core driving early diffusion models (such as Stable Diffusion 1.5/2.1/XL). CLIP maps user descriptive text prompts into visual latent directions, directing the denoising U-Net matrix to synthesize graphics matching the query aesthetics precisely. | 2022 | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) |
 | [**Enterprise Multi-Modal Semantic Search Engines**](./details/multimodal_semantic_search.md) | Powers high-volume corporate database retrieval arrays. Users execute queries over vast unstructured video, photo, and document repositories using free-form language sentences (e.g., `"Find all security footage showing a person holding a package close to the warehouse exit boundary"`), and the CLIP engine indexes the matched video timestamps instantaneously. | 2021 | [CLIP4Clip: An Empirical Study of CLIP for Video Text Retrieval](https://arxiv.org/abs/2104.08860) |
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-CLIP&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-CLIP&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-CLIP&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-CLIP&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
+
