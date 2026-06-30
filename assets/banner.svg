@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="50%" stop-color="#12131c" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2be2">
+        <animate attributeName="stop-color" values="#8a2be2;#00ffff;#8a2be2" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#ff007f;#00f2fe" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Flow Line Gradient -->
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#00ffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="15" fill="url(#bgGrad)" />
+
+  <!-- Grid decoration -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250" />
+    <path d="M 100,0 L 100,300 M 200,0 L 200,300 M 300,0 L 300,300 M 400,0 L 400,300 M 500,0 L 500,300 M 600,0 L 600,300 M 700,0 L 700,300 M 800,0 L 800,300 M 900,0 L 900,300 M 1000,0 L 1000,300 M 1100,0 L 1100,300" />
+  </g>
+
+  <!-- Dynamic Network Representation -->
+  <g transform="translate(100, 150)">
+    <!-- Tower 1: Vision (Left) -->
+    <circle cx="0" cy="-50" r="10" fill="#8a2be2" filter="url(#glow)">
+      <animate attributeName="r" values="10;12;10" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="-50" y="-80" fill="#a0a5c0" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold">VISION TOWER</text>
+    
+    <!-- Tower 2: Text (Left-bottom) -->
+    <circle cx="0" cy="50" r="10" fill="#00f2fe" filter="url(#glow)">
+      <animate attributeName="r" values="10;12;10" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="-50" y="85" fill="#a0a5c0" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold">TEXT TOWER</text>
+
+    <!-- Contrastive Projection Node (Right) -->
+    <circle cx="200" cy="0" r="15" fill="#ffffff" filter="url(#glow)">
+      <animate attributeName="fill" values="#ffffff;#00ffff;#ffffff" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <text x="160" y="-30" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold">SHARED SPACE</text>
+
+    <!-- Flowing Paths with moving dash arrays -->
+    <path d="M 0,-50 C 100,-50 100,0 200,0" fill="none" stroke="url(#flowGrad)" stroke-width="4" stroke-dasharray="10 15">
+      <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M 0,50 C 100,50 100,0 200,0" fill="none" stroke="url(#flowGrad)" stroke-width="4" stroke-dasharray="10 15">
+      <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g transform="translate(480, 140)">
+    <text x="0" y="0" fill="url(#textGrad)" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-size="64" font-weight="900" letter-spacing="2" filter="url(#glow)">Awesome-CLIP</text>
+    <text x="5" y="45" fill="#8e94b2" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" letter-spacing="1">Contrastive Language-Image Pre-training Evolution</text>
+  </g>
+
+  <!-- Right Decorative Wave -->
+  <path d="M 1100,0 C 1150,100 1120,200 1200,300 L 1200,0 Z" fill="#8a2be2" fill-opacity="0.05" />
+  <path d="M 1150,0 C 1180,100 1160,200 1200,300" fill="none" stroke="url(#textGrad)" stroke-width="2" stroke-opacity="0.3" />
+</svg>

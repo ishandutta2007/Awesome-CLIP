@@ -1,11 +1,16 @@
-# Awesome-CLIP
-## Contrastive Language-Image Pre-training (CLIP): Evolution, Variants, & Applications
+# Awesome-CLIP 🚀
+
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome-CLIP Banner" width="100%">
+</p>
+
+## 🧠 Contrastive Language-Image Pre-training (CLIP): Evolution, Variants, & Applications
 
 Contrastive Language-Image Pre-training (CLIP) is a foundational multimodal deep learning paradigm that unifies computer vision and natural language processing into a shared semantic embedding space. Introduced by OpenAI in 2021 (Radford et al., "Learning Transferable Visual Models From Natural Language Supervision"), CLIP completely changed the vision-language domain by bypassing traditional, closed-vocabulary supervised labeling loops (e.g., categorizing an image into a fixed index of 1,000 ImageNet numbers). By training a dual-tower network over hundreds of millions of uncurated internet image-caption pairs using a symmetric contrastive loss function, CLIP maps visual features and textual concepts into a matched coordinate grid. This architecture natively unlocks **zero-shot image classification**, open-vocabulary visual grounding, and text-to-image semantic matching.
 
 ---
 
-## 1. The Chronological Evolution
+## ⏳ 1. The Chronological Evolution
 
 The technical progression of contrastive multimodal scaling has transitioned from basic dual-tower coordinate alignments to optimized sigmoid loss variants, moving toward modern autoencoding and generative foundation hybrids.
 
@@ -24,7 +29,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Training Variants
+## 🔀 2. Core Functional & Training Variants
 
 The CLIP family tree features specialized structural mutations engineered to optimize data ingestion efficiency and handle multi-lingual or localized spatial properties.
 
@@ -37,7 +42,7 @@ The CLIP family tree features specialized structural mutations engineered to opt
 
 ---
 
-## 3. Modality Modality & Architecture Component Types
+## 🏗️ 3. Modality & Architecture Component Types
 
 Depending on the operational constraints of the data-science or engineering pipeline, CLIP configurations are built using distinct visual processing layers.
 
@@ -49,7 +54,7 @@ Depending on the operational constraints of the data-science or engineering pipe
 
 ---
 
-## 4. Production Engineering Challenges & Mitigations
+## 🛡️ 4. Production Engineering Challenges & Mitigations
 
 Deploying and scaling CLIP-style contrastive pipelines across industrial infrastructures introduces unique data curation and token budget constraints.
 
@@ -60,7 +65,7 @@ Deploying and scaling CLIP-style contrastive pipelines across industrial infrast
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 🌟 5. Frontier Real-World AI Applications
 
 | Application | Practical Context & Mechanism | Year | Paper Citation |
 | :--- | :--- | :--- | :--- |
